@@ -1,4 +1,4 @@
-# Proyek Analisis Prediktif: Mengatasi Masalah Dropout Mahasiswa di Jaya Jaya Institut
+# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
 
 ## Business Understanding
 
@@ -23,15 +23,16 @@ Untuk menjawab permasalahan di atas, proyek ini akan mencakup beberapa hal berik
 ## Persiapan
 
 ### Sumber Data
-Dataset yang digunakan dalam proyek ini adalah **"Predict students' dropout and academic success"** yang tersedia di [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success). Dataset ini berisi informasi demografis, sosio-ekonomi, dan performa akademik dari 4.424 mahasiswa.
+Dataset yang digunakan dalam proyek ini adalah **"Students' Performance"** yang tersedia di Dicoding_dataset [https://github.com/dicodingacademy/dicoding_dataset/tree/main/students_performance). Dataset ini berisi informasi demografis, sosio-ekonomi, dan performa akademik dari 4.424 mahasiswa.
 
 ### Setup Environment
 Proyek ini dikerjakan menggunakan bahasa Python. Library utama yang digunakan untuk analisis dan pengembangan adalah sebagai berikut:
-
-streamlit
-pandas
-scikit-learn
-numpy
+```bash
+        streamlit
+        pandas
+        scikit-learn
+        numpy
+```
 
 Versi spesifik dari library ini terdokumentasi dalam file `requirements.txt` yang disertakan dalam proyek.
 

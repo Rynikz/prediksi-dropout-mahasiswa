@@ -25,25 +25,24 @@ model, scaler = load_assets()
 
 # --- Fungsi untuk Prediksi ---
 def predict_status(data, model, scaler):
-    # Buat DataFrame dari input
-    # Urutan kolom HARUS SAMA dengan saat training
-    # Di sini kita asumsikan urutan kolom sesuai daftar di bawah
-    # Jika model Anda menggunakan semua 36 fitur, Anda harus memasukkan semuanya
-    # Untuk prototipe, kita fokus pada fitur-fitur paling penting
-    
-    # Dapatkan semua nama fitur dari scaler
+    # Mendapatkan semua nama fitur dari scaler
     feature_names = scaler.get_feature_names_out()
-    
-    # Buat DataFrame dengan semua fitur dan isi dengan nilai default (misal, 0)
+
+    # Membuat DataFrame dengan semua kolom fitur
     input_df = pd.DataFrame([data], columns=feature_names)
-    
-    # Scaling data
+
+    # --- TAMBAHKAN BARIS INI ---
+    # Mengisi semua nilai NaN yang muncul dengan 0
+    input_df.fillna(0, inplace=True)
+    # ---------------------------
+
+    # Scaling data yang sudah bersih dari NaN
     input_scaled = scaler.transform(input_df)
-    
+
     # Prediksi
     prediction = model.predict(input_scaled)
     prediction_proba = model.predict_proba(input_scaled)
-    
+
     return prediction[0], prediction_proba
 
 # --- Antarmuka (UI) Streamlit ---

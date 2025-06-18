@@ -1,9 +1,5 @@
 # Proyek Analisis Prediktif: Mengatasi Masalah Dropout Mahasiswa di Jaya Jaya Institut
 
-- **Nama:** [Isi Nama Lengkap Anda]
-- **Email:** [Isi Email Anda]
-- **ID Dicoding:** [Isi ID Dicoding Anda]
-
 ## Business Understanding
 
 ### Latar Belakang Bisnis
